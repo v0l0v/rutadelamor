@@ -1,25 +1,25 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100vh;
-    background: url('fondorda.webp') no-repeat center center fixed;
-    background-size: cover;
-    color: rgb(0, 0, 0);
-    margin: 0;
-    padding: 0;
+/* Hace el mapa a pantalla completa */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-#map {
-    height: 90vh; /* Ajuste para dejar espacio para el padding */
-    width: 90%; /* Ajuste para dejar espacio para el padding */
-    margin: 5%; /* Espaciado del 5% por cada lado */
-    box-sizing: border-box;
+#map.full-screen-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 }
-.logo-overlay {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1000;
+
+/* Logo en la misma posición que en index.html: */
+.logo-link {
+  position: absolute;
+  top: 16px;    /* Ajusta valores para que coincida con index.html */
+  left: 16px;   /* Igual que en index */
+  z-index: 1000;
+}
+.logo {
+  width: 48px;  /* Tamaño igual al usado en index */
+  height: auto;
 }

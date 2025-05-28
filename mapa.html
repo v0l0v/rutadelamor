@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa de Restaurantes</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <link rel="stylesheet" href="parada.css" />
-    <link rel="stylesheet" href="mapa.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruta del Amor - Mapa</title>
+  <!-- Enlaza tus estilos (asegúrate de que mapa.css tenga los cambios que indicamos abajo) -->
+  <link rel="stylesheet" href="../css/mapa.css">
 </head>
 <body>
+  <!-- Logo de vuelta al índice, igual que en index.html -->
+  <a href="index.html" class="logo-link">
+    <img src="../assets/logorda.png" alt="Volver" class="logo">
+  </a>
 
-    <div id="map"></div>
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="mapa.js"></script><!-- Tu contenido de página va aquí -->
+  <!-- Contenedor de mapa a pantalla completa -->
+  <div id="map" class="full-screen-map"></div>
 
-    <div class="menu-bar">
-        <a href="index.html"><i class="fas fa-home"></i><br>Home</a>
-        <a href="mapa.html"><i class="fa fa-map-marker-alt"></i><br>Mapa</a>
-        <a href="registro.html"><i class="fas fa-user"></i><br>Registro</a>
-    </div>
-    
+  <!-- Scripts de Leaflet / tu lógica de mapa -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="../js/rda.js"></script>
 </body>
 </html>
