@@ -23,3 +23,25 @@ body {
     transform: translateX(-50%);
     z-index: 1000;
 }
+
+/* Mapa que ocupa desde el top hasta justo encima de la barra inferior */
+#map.adjusted-full-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* Ajusta el valor de bottom al alto real de tu barra inferior (por ejemplo 60px) */
+  bottom: 60px;
+}
+
+/* Logo en la misma posición que en index.html: */
+.logo-link {
+  position: absolute;
+  top: 16px;    /* Ajusta si es necesario */
+  left: 16px;   /* Igual que en index */
+  z-index: 1000;
+}
+.logo {
+  width: 48px;  /* Tamaño igual al usado en index */
+  height: auto;
+}
